@@ -1,0 +1,227 @@
+/* :root = Variáves */
+
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {
+    /* Margin padrão para os itens */
+    margin: 0;
+    padding: 0;
+    /* não quebra o valor da caixa */
+    box-sizing: border-box;
+}
+
+
+/* Estilo de todo o site */
+
+body {
+    background: var(--preta);
+    font-family: 'arial', Times, serif;
+    color: white;
+}
+
+
+/* Estilo de todo o Menu */
+
+header .container {
+    /* Joga a Navegação para o TOPO */
+    display: flex;
+    /* Joga a Navegação em linha */
+    flex-direction: row;
+    /* Centraliza na linha */
+    align-items: center;
+    /* Centraliza em Horizontal */
+    justify-content: space-between;
+}
+
+.logo {
+    /* Joga a Navegação para o TOPO */
+    display: flex;
+    /* Joga a Navegação em linha */
+    flex-direction: row;
+    /* Centraliza na linha */
+    align-items: center;
+    /* Centraliza em Horizontal */
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+/* Estilo do Logo */
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', times;
+    font-size: 50px;
+}
+
+
+/* SubMenu */
+
+.sub-menu {
+    display: none;
+    text-decoration: none;
+    margin-right: 15px;
+    list-style: none;
+    position: absolute;
+    margin-top: 15%;
+    font-size: 15px;
+}
+
+
+/* SubMenu com Ancora */
+
+.sub-menu-a {
+    margin-bottom: 30%;
+    font
+}
+
+
+/* Menu */
+
+.menu {
+    text-decoration: none;
+    margin-right: 15px;
+    list-style: none;
+}
+
+
+/* Menu Lista */
+
+.menu li {
+    float: left;
+    margin-right: 10pt;
+    text-decoration: none;
+    position: relative;
+}
+
+
+/* Menu Lista ao passar o mouse */
+
+.menu li:hover .sub-menu {
+    display: block;
+}
+
+
+/* Menu Ancora */
+
+.menu a {
+    text-decoration: none;
+    padding: 10px;
+    color: #AAA;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Menu Ancora ao Passar o Mouse*/
+
+.menu a:hover {
+    color: #fff;
+}
+
+.filme-principal {
+    font-size: 16px;
+    /* Deixa a Imagem mais escura 
+    linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%)*/
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('../img/banner.jpg');
+    height: 500px;
+    /* Area da caixa */
+    background-size: cover;
+    /* Trabalhar o elemento */
+    display: flex;
+    /* Elementos em coluna */
+    flex-direction: column;
+    /* Elementos Justificado ao centro da Coluna */
+    justify-content: center;
+    /* Começar a esquerda */
+    align-items: flex-start;
+}
+
+
+/* Estilo do Menu */
+
+
+/*
+nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 15px;
+}
+
+*/
+
+
+/* Efeito ao passar o mouse */
+
+
+/* Filmes Principal */
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.titulo-video {
+    font-size: 26px;
+    color: #e5e5e5;
+    font-weight: 700;
+    margin: 1% 4% .5% 4%;
+}
+
+.botao {
+    /* fundo do botão quase transparente e removido borda*/
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    /* margin do botao */
+    padding: 15px 30px;
+    /* espaçamento a direita */
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+
+/* hover muda o efeito ao passar o mouse */
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* Espaçamento dos Icones no botão */
+
+.botao i {
+    margin-right: 8px;
+}
+
+
+/* Margin de todos os container */
+
+.container {
+    margin-left: 30px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 10px;
+}
