@@ -1,4 +1,7 @@
 /* :root = Variáves */
+.bem-vindo {
+    font-size: 16px;
+}
 
 :root {
     --vermelho: #E50914;
